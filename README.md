@@ -1,28 +1,31 @@
 # Budgetmate
 # 💰 BudgetMate
 
-BudgetMate is a personal expense tracking application built with **FastAPI**, **PostgreSQL**, and **HTML/CSS**.  
-It helps users log daily expenses and provides a dashboard to visualize category-wise splits and alerts if spending exceeds limits.
+**BudgetMate** is a simple personal finance tracker built with **FastAPI**, **PostgreSQL**, and **HTML/CSS**.  
+It helps you log expenses, plan budgets, and view smart insights via a lightweight dashboard.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- Add and track daily/monthly expenses  
-- Dashboard with category-wise split  
-- Alerts when category limit is exceeded  
-- Clean and responsive UI using plain HTML/CSS  
-- Lightweight backend powered by FastAPI  
+- ✅ Add daily or monthly expenses
+- 📊 Dashboard with category-wise split
+- 🚨 Alerts when spending exceeds limits
+- 💡 Clean, minimal UI using HTML/CSS (no JS frameworks)
+- 🔌 Backend API with FastAPI
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-- **Backend:** FastAPI (Python)
-- **Frontend:** HTML5 + CSS3 (Jinja2 templating)
-- **Database:** PostgreSQL
-- **ORM/Driver:** psycopg2
-- **Others:** dotenv for managing secrets
+| Layer       | Technology        |
+|-------------|-------------------|
+| Backend     | FastAPI (Python)  |
+| Database    | PostgreSQL        |
+| ORM Driver  | psycopg2          |
+| Frontend    | HTML5 + CSS3      |
+| Templates   | Jinja2 (FastAPI)  |
+| Dev Tools   | dotenv, uvicorn   |
 
 ---
 
@@ -30,18 +33,19 @@ It helps users log daily expenses and provides a dashboard to visualize category
 
 budgetmate/
 ├── backend/
-│ ├── main.py               # FastAPI app with routes
-│ ├── db.py                 # PostgreSQL connection
-│ └── models.py             # Data models (optional)
+│   ├── main.py                    # FastAPI app with routes
+│   ├── db.py                      # DB connection setup
+│   ├── models.py                  # Pydantic models (optional if logic grows)
+│   └── utils/
+│       └── formatter.py           # Any helper utilities (optional)
 │
 ├── frontend/
-│ ├── templates/
-│ │ ├── index.html          # Add Expense page
-│ │ └── dashboard.html      # Dashboard page
-│ └── static/
-│ └── styles.css            # CSS styling
+│   ├── templates/
+│   │   └── index.html             # Main page with form + expense list
+│   └── static/
+│       └── styles.css             # Styling for HTML
 │
-├── .env                    # Environment variables (DB config)
-├── requirements.txt        # Python dependencies
-├── run.sh                  # Run the FastAPI server
-└── README.md               # Project description
+├── .env                           # DB credentials (for local env)
+├── requirements.txt               # Dependencies
+├── README.md                      # Project documentation
+└── run.sh                         # Simple shell script to run the server
