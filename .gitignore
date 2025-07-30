@@ -1,0 +1,30 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+.env/
+
+# VSCode settings
+.vscode/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# SQLite / local db
+*.sqlite3
+
+# Testing
+.coverage
+.tox/
+.cache/
+
+# Environment files
+*.env
+.env.*
