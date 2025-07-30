@@ -49,3 +49,33 @@ budgetmate/
 ├── requirements.txt               # Dependencies
 ├── README.md                      # Project documentation
 └── run.sh                         # Simple shell script to run the server
+
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repo
+```bash
+git clone https://github.com/yourusername/budgetmate.git
+cd budgetmate
+
+```
+### 2. Setup Virtual Environment
+```bash
+python -m venv venv
+venv\Scripts\activate.bat
+```
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure Environment Variables
+
+DB_NAME=budgetmate
+DB_USER=postgres
+DB_PASS=yourpassword
+DB_HOST=localhost
+DB_PORT=5432
